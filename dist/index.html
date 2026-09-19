@@ -3,116 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфолио Эдуарда — веб-разработка, интерфейсы и AI-assisted product work.">
-  <title>Эдуард — Web Developer & Designer</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23171717'/%3E%3Cpath d='M12 13h40v12H27v7h21v11H27v8h25v1H12z' fill='%23f4f1e8'/%3E%3C/svg%3E">
+  <meta name="description" content="Портфолио Эдуарда — веб-разработка, интерфейсы и работающие продуктовые системы.">
+  <title>Eduard — Design, Code, Ship</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Cpath d='M8 8h48v13H24v7h27v11H24v8h32v9H8z' fill='%23ddff00'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Наверх">ED / 26</a>
-    <nav aria-label="Основная навигация">
-      <a href="#work">Работы</a>
-      <a href="#about">Обо мне</a>
-      <a href="#contact">Контакт</a>
-    </nav>
-  </header>
-
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="#top">EDUARD®</a><p>WEB / PRODUCT / SYSTEMS</p><nav aria-label="Навигация"><a href="#work">PROJECTS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav></header>
   <main id="top">
-    <section class="hero section-shell">
-      <div class="eyebrow"><span class="dot"></span> Доступен для стартапов и продуктовых команд</div>
-      <h1>ДЕЛАЮ<br><span>ИНТЕРФЕЙСЫ,</span><br>КОТОРЫЕ РАБОТАЮТ.</h1>
-      <div class="hero-foot">
-        <p>Веб-разработчик и дизайнер. Быстро превращаю сырую идею в понятный, собранный и проверяемый продукт.</p>
-        <a class="cta" href="#work">Смотреть кейсы <span>↘</span></a>
-      </div>
-      <div class="ticker" aria-hidden="true"><span>WEB DEVELOPMENT · PRODUCT DESIGN · RAPID PROTOTYPING · AUTOMATION · </span></div>
+    <section class="hero">
+      <div class="hero-index">PORTFOLIO<br>2026 / 01</div><div class="hero-stamp">BASED IN ASIA<br>OPEN TO RELOCATION</div>
+      <h1><span>DESIGN.</span><br>CODE.<br><i>SHIP.</i></h1>
+      <div class="hero-card"><img src="./assets/live-lab.png" alt="Проект эфирной студии" width="1536" height="1024"><b>SELECTED WORK / 03</b></div>
+      <p class="hero-note">Я проектирую и собираю цифровые продукты: от первого экрана до работающей интеграции на реальном устройстве.</p>
+      <a class="scroll-cue" href="#work">SCROLL TO WORK <span>↓</span></a>
+      <div class="hero-line" aria-hidden="true">DEVELOPER × DESIGNER × BUILDER × DEVELOPER × DESIGNER × BUILDER ×</div>
     </section>
-
-    <section class="work section-shell" id="work">
-      <div class="section-head">
-        <p>01 / Избранные проекты</p>
-        <p>Практика, а не концепты</p>
-      </div>
-
-      <article class="project project-wide project-jarvis">
-        <div class="project-art" role="img" aria-label="Интерфейс голосового ассистента Джарвис">
-          <div class="radar"><i></i><i></i><i></i></div>
-          <div class="signal">LISTENING<br><strong>RU</strong></div>
-        </div>
-        <div class="project-copy">
-          <span>01 / Voice + Home</span>
-          <h2>JARVIS</h2>
-          <p>Русскоязычный голосовой ассистент для умного дома: потоковое распознавание, удалённый «мозг», управление Home Assistant и честная проверка выполненных действий.</p>
-          <ul><li>Python</li><li>WebSocket</li><li>Home Assistant</li></ul>
-        </div>
-      </article>
-
-      <div class="project-grid">
-        <article class="project project-stream">
-          <div class="project-art stream-art" role="img" aria-label="Схема вертикального live-потока">
-            <div class="phone"><b>LIVE</b><span>30 FPS</span><em>↓ 27%</em></div>
-            <div class="pulse"></div>
-          </div>
-          <div class="project-copy">
-            <span>02 / Streaming stack</span>
-            <h2>LIVE LAB</h2>
-            <p>Рабочая связка OBS, TikTok LIVE Studio и iPhone mirroring на MacBook Air M1. Диагностика нагрузки и оптимизация без закрытия нужных приложений.</p>
-          </div>
-        </article>
-
-        <article class="project project-music">
-          <div class="project-art music-art" role="img" aria-label="Музыкальная очередь для эфира">
-            <div class="disc"></div>
-            <div class="track"><small>NOW PLAYING</small><b>CHAT REQUEST</b><span>02:18 ━━━━━ 03:42</span></div>
-          </div>
-          <div class="project-copy">
-            <span>03 / Creator tool</span>
-            <h2>LIVEDECK</h2>
-            <p>Музыкальная панель для эфиров: команды из чата, очередь, поиск треков и видимый официальный веб-плеер вместо хрупкой автоматизации медиатеки.</p>
-          </div>
-        </article>
-      </div>
-
-      <article class="project project-wide project-lampa">
-        <div class="project-copy">
-          <span>04 / TV interface</span>
-          <h2>LAMPA<br>NAVIGATOR</h2>
-          <p>Навигация по сезонам и сериям для Apple TV: разбор названий, сортировка результатов, фильтрация по сидерам и интерфейс, рассчитанный на пульт.</p>
-          <ul><li>JavaScript</li><li>Apple TV UX</li><li>TorrServer</li></ul>
-        </div>
-        <div class="project-art tv-art" role="img" aria-label="Сетка сезонов и серий на телевизоре">
-          <div class="season">СЕЗОН 01</div>
-          <div class="episodes"><b>01</b><b>02</b><b class="active">03</b><b>04</b><b>05</b><b>06</b></div>
-          <div class="remote">↑<br>← ● →<br>↓</div>
-        </div>
-      </article>
+    <section class="work" id="work">
+      <header class="section-title"><span>01</span><h2>SELECTED<br>WORK</h2><p>Три кейса, где дизайн существует не отдельно от кода, а заканчивается работающей системой.</p></header>
+      <article class="case case-jarvis"><div class="case-no">01 / 03</div><div class="case-media"><img src="./assets/jarvis.png" alt="Визуальная сцена голосового ассистента и умного дома" width="1536" height="1024"></div><div class="case-title"><small>VOICE SYSTEM / SMART HOME</small><h3>JARVIS</h3></div><div class="case-info"><p>Русскоязычный голосовой ассистент для умного дома: потоковое распознавание, удалённый мозг и проверка реального состояния устройств.</p><div class="tags"><span>PYTHON</span><span>WEBSOCKET</span><span>HOME ASSISTANT</span></div></div><div class="case-mark">Ж</div></article>
+      <article class="case case-live"><div class="case-no">02 / 03</div><div class="case-media"><img src="./assets/live-lab.png" alt="Коллаж из оборудования и интерфейсов live-производства" width="1536" height="1024"></div><div class="case-title"><small>CREATOR TOOL / STREAMING</small><h3>LIVE<br>LAB</h3></div><div class="case-info"><p>Связка OBS, TikTok LIVE Studio, iPhone mirroring и музыкального LiveDeck. Не демо: оптимизация нагрузки, очередь треков и рабочая эфирная схема.</p><div class="tags"><span>OBS</span><span>WEB UI</span><span>AUTOMATION</span></div></div><div class="metric"><b>60→30</b><span>FPS / MEASURED</span></div></article>
+      <article class="case case-lampa"><div class="case-no">03 / 03</div><div class="case-media"><img src="./assets/lampa.png" alt="Телевизионный интерфейс и пульт" width="1536" height="1024"></div><div class="case-title"><small>TV UX / MEDIA SYSTEM</small><h3>LAMPA<br>NAVIGATOR</h3></div><div class="case-info"><p>Навигация по сезонам и сериям для Apple TV: разбор названий, сортировка результатов и интерфейс, которым удобно пользоваться с пульта.</p><div class="tags"><span>JAVASCRIPT</span><span>APPLE TV UX</span><span>TORRSERVER</span></div></div><div class="case-mark">▶</div></article>
     </section>
-
-    <section class="about section-shell" id="about">
-      <div class="section-head"><p>02 / Подход</p><p>Дизайн + код + проверка</p></div>
-      <div class="about-grid">
-        <h2>НЕ «МАГИЯ AI».<br>НОРМАЛЬНАЯ<br>РАБОТА.</h2>
-        <div class="about-copy">
-          <p>Использую нейросети как ускоритель: для исследования, прототипов, кода и диагностики. Решения принимаю сам, проверяю на реальном устройстве и не выдаю демо за готовый продукт.</p>
-          <dl>
-            <div><dt>01</dt><dd>Разобраться в задаче</dd></div>
-            <div><dt>02</dt><dd>Собрать рабочий прототип</dd></div>
-            <div><dt>03</dt><dd>Проверить и довести</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section-shell" id="contact">
-      <p>03 / Связаться</p>
-      <h2>ЕСТЬ ЗАДАЧА?<br><span>ДАВАЙТЕ ОБСУДИМ.</span></h2>
-      <a class="contact-link" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
-      <p class="contact-note">Контакт временный — заменю на ваш перед публикацией на основном домене.</p>
-    </section>
+    <section class="about" id="about"><div class="about-kicker">02 / PRINCIPLES</div><h2>NO MAGIC.<br><span>JUST</span> GOOD<br>WORK.</h2><div class="about-text"><p>Использую нейросети как ускоритель, а не как замену мышлению. Разбираюсь в задаче, собираю прототип, подключаю реальную систему и проверяю результат.</p><ol><li><b>01</b>Понять, что действительно нужно</li><li><b>02</b>Быстро собрать рабочее решение</li><li><b>03</b>Проверить на реальном сценарии</li></ol></div><div class="about-side">VIBE CODING<br>WITHOUT<br>VIBE OUTPUT</div></section>
+    <section class="contact" id="contact"><p>03 / LET'S TALK</p><h2>HAVE A<br>PROJECT?</h2><a href="mailto:hello@example.com">HELLO@EXAMPLE.COM <span>↗</span></a><small>Временный адрес — заменим на ваш перед подключением основного домена.</small></section>
   </main>
-
-  <footer><span>EDUARD © 2026</span><span>DESIGN / CODE / SHIP</span></footer>
+  <footer><b>EDUARD / 2026</b><span>DESIGN → CODE → RESULT</span><a href="#top">BACK TO TOP ↑</a></footer>
   <script src="./script.js"></script>
 </body>
 </html>

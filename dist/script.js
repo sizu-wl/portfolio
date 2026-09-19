@@ -7,7 +7,7 @@ const seen = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.project, .about-grid').forEach((element) => {
+document.querySelectorAll('.case, .about-text').forEach((element) => {
   element.classList.add('reveal');
   seen.observe(element);
 });
