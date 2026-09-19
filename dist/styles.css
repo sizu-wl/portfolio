@@ -67,7 +67,7 @@ img{display:block;max-width:100%}
 .about-text>p{font-size:20px;line-height:1.45;margin:0 0 28px}
 .about-text ol{list-style:none;padding:0;margin:0}
 .about-text li{border-top:2px solid var(--black);padding:13px 0;display:grid;grid-template-columns:48px 1fr}
-.about-side{position:absolute;right:-30px;top:15%;font-family:'Russo One';font-size:20px;line-height:1.1;writing-mode:vertical-rl;background:var(--pink);color:white;padding:25px 16px}
+.about-side{position:absolute;right:3vw;top:3vw;z-index:4;font-family:'Russo One';font-size:14px;line-height:1;background:var(--pink);color:white;padding:13px 16px;white-space:nowrap;transform:rotate(1.5deg);box-shadow:7px 7px 0 var(--black)}
 .contact{padding:10vw 4vw 6vw;min-height:90vh;display:flex;flex-direction:column;justify-content:center;position:relative}
 .contact>p{font-size:11px;font-weight:800}
 .contact h2{font-size:clamp(100px,17vw,250px);color:var(--acid)}
