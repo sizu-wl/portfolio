@@ -1,35 +1,35 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфолио Эдуарда — веб-разработка, интерфейсы и работающие продуктовые системы.">
+  <meta name="description" content="Eduard's portfolio — web development, interface design, and working product systems.">
   <title>Eduard — Design, Code, Ship</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Cpath d='M8 8h48v13H24v7h27v11H24v8h32v9H8z' fill='%23ddff00'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
-  <header class="topbar"><a class="brand" href="#top">EDUARD®</a><p>WEB / PRODUCT / SYSTEMS</p><nav aria-label="Навигация"><a href="#work">PROJECTS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav></header>
+  <header class="topbar"><a class="brand" href="#top">EDUARD®</a><p>WEB / PRODUCT / SYSTEMS</p><nav aria-label="Main navigation"><a href="#work" data-i18n="navWork">PROJECTS</a><a href="#about" data-i18n="navAbout">ABOUT</a><a href="#contact" data-i18n="navContact">CONTACT</a><button class="lang-toggle" type="button" aria-label="Switch language">RU</button></nav></header>
   <main id="top">
     <section class="hero">
-      <div class="hero-index">PORTFOLIO<br>2026 / 01</div><div class="hero-stamp">BASED IN ASIA<br>OPEN TO RELOCATION</div>
-      <h1><span>DESIGN.</span><br>CODE.<br><i>SHIP.</i></h1>
-      <div class="hero-card"><img src="./assets/live-lab.png" alt="Проект эфирной студии" width="1536" height="1024"><b>SELECTED WORK / 03</b></div>
-      <p class="hero-note">Я проектирую и собираю цифровые продукты: от первого экрана до работающей интеграции на реальном устройстве.</p>
-      <a class="scroll-cue" href="#work">SCROLL TO WORK <span>↓</span></a>
+      <div class="hero-index" data-i18n-html="heroIndex">PORTFOLIO<br>2026 / 01</div><div class="hero-stamp" data-i18n-html="heroStamp">BASED IN ASIA<br>OPEN TO RELOCATION</div>
+      <h1 data-i18n-html="heroTitle"><span>DESIGN.</span><br>CODE.<br><i>SHIP.</i></h1>
+      <div class="hero-card"><img src="./assets/live-lab.png" alt="Live production studio project" width="1536" height="1024"><b data-i18n="selectedCount">SELECTED WORK / 03</b></div>
+      <p class="hero-note" data-i18n="heroNote">I design and build digital products — from the first screen to a working integration on a real device.</p>
+      <a class="scroll-cue" href="#work"><span data-i18n="scrollWork">SCROLL TO WORK</span> <span>↓</span></a>
       <div class="hero-line" aria-hidden="true"><div class="hero-line-track"><span>DEVELOPER × DESIGNER × BUILDER × DEVELOPER × DESIGNER × BUILDER ×</span><span>DEVELOPER × DESIGNER × BUILDER × DEVELOPER × DESIGNER × BUILDER ×</span></div></div>
     </section>
     <section class="work" id="work">
-      <header class="section-title"><span>01</span><h2>SELECTED<br>WORK</h2><p>Три кейса, где дизайн существует не отдельно от кода, а заканчивается работающей системой.</p></header>
-      <article class="case case-jarvis"><div class="case-no">01 / 03</div><div class="case-media"><img src="./assets/jarvis.png" alt="Визуальная сцена голосового ассистента и умного дома" width="1536" height="1024"></div><div class="case-title"><small>VOICE SYSTEM / SMART HOME</small><h3>JARVIS</h3></div><div class="case-info"><p>Русскоязычный голосовой ассистент для умного дома: потоковое распознавание, удалённый мозг и проверка реального состояния устройств.</p><div class="tags"><span>PYTHON</span><span>WEBSOCKET</span><span>HOME ASSISTANT</span></div></div><div class="case-mark">Ж</div></article>
-      <article class="case case-live"><div class="case-no">02 / 03</div><div class="case-media"><img src="./assets/live-lab.png" alt="Коллаж из оборудования и интерфейсов live-производства" width="1536" height="1024"></div><div class="case-title"><small>CREATOR TOOL / STREAMING</small><h3>LIVE<br>LAB</h3></div><div class="case-info"><p>Связка OBS, TikTok LIVE Studio, iPhone mirroring и музыкального LiveDeck. Не демо: оптимизация нагрузки, очередь треков и рабочая эфирная схема.</p><div class="tags"><span>OBS</span><span>WEB UI</span><span>AUTOMATION</span></div></div><div class="metric"><b>60→30</b><span>FPS / MEASURED</span></div></article>
-      <article class="case case-lampa"><div class="case-no">03 / 03</div><div class="case-media"><img src="./assets/lampa.png" alt="Телевизионный интерфейс и пульт" width="1536" height="1024"></div><div class="case-title"><small>TV UX / MEDIA SYSTEM</small><h3>LAMPA<br>NAVIGATOR</h3></div><div class="case-info"><p>Навигация по сезонам и сериям для Apple TV: разбор названий, сортировка результатов и интерфейс, которым удобно пользоваться с пульта.</p><div class="tags"><span>JAVASCRIPT</span><span>APPLE TV UX</span><span>TORRSERVER</span></div></div><div class="case-mark">▶</div></article>
+      <header class="section-title"><span>01</span><h2 data-i18n-html="workTitle">SELECTED<br>WORK</h2><p data-i18n="workIntro">Three projects where design does not stop at a mockup — it ends in a working system.</p></header>
+      <article class="case case-jarvis"><div class="case-no">01 / 03</div><div class="case-media"><img src="./assets/jarvis.png" alt="Voice assistant and smart home scene" width="1536" height="1024"></div><div class="case-title"><small data-i18n="jarvisType">VOICE SYSTEM / SMART HOME</small><h3>JARVIS</h3></div><div class="case-info"><p data-i18n="jarvisText">A Russian-language smart home assistant with streaming speech recognition, a remote processing layer, and verified device-state feedback.</p><div class="tags"><span>PYTHON</span><span>WEBSOCKET</span><span>HOME ASSISTANT</span></div></div><div class="case-mark">J</div></article>
+      <article class="case case-live"><div class="case-no">02 / 03</div><div class="case-media"><img src="./assets/live-lab.png" alt="Live production equipment and interface collage" width="1536" height="1024"></div><div class="case-title"><small data-i18n="liveType">CREATOR TOOL / STREAMING</small><h3>LIVE<br>LAB</h3></div><div class="case-info"><p data-i18n="liveText">An integrated setup for OBS, TikTok LIVE Studio, iPhone mirroring, and the music-driven LiveDeck. Tested load optimization, track requests, and a production-ready streaming workflow.</p><div class="tags"><span>OBS</span><span>WEB UI</span><span>AUTOMATION</span></div></div><div class="metric"><b>60→30</b><span>FPS / MEASURED</span></div></article>
+      <article class="case case-lampa"><div class="case-no">03 / 03</div><div class="case-media"><img src="./assets/lampa.png" alt="Television interface and remote control" width="1536" height="1024"></div><div class="case-title"><small data-i18n="lampaType">TV UX / MEDIA SYSTEM</small><h3>LAMPA<br>NAVIGATOR</h3></div><div class="case-info"><p data-i18n="lampaText">Season and episode navigation for Apple TV, including title parsing, result sorting, and a remote-friendly interface built for the living room.</p><div class="tags"><span>JAVASCRIPT</span><span>APPLE TV UX</span><span>TORRSERVER</span></div></div><div class="case-mark">▶</div></article>
     </section>
-    <section class="about" id="about"><div class="about-kicker">02 / PRINCIPLES</div><h2>NO MAGIC.<br><span>JUST</span> GOOD<br>WORK.</h2><div class="about-text"><p>Использую нейросети как ускоритель, а не как замену мышлению. Разбираюсь в задаче, собираю прототип, подключаю реальную систему и проверяю результат.</p><ol><li><b>01</b>Понять, что действительно нужно</li><li><b>02</b>Быстро собрать рабочее решение</li><li><b>03</b>Проверить на реальном сценарии</li></ol></div><div class="about-side">VIBE CODING / NO VIBE OUTPUT</div></section>
-    <section class="contact" id="contact"><p>03 / LET'S TALK</p><h2>HAVE A<br>PROJECT?</h2><a href="mailto:hello@example.com">HELLO@EXAMPLE.COM <span>↗</span></a><small>Временный адрес — заменим на ваш перед подключением основного домена.</small></section>
+    <section class="about" id="about"><div class="about-kicker" data-i18n="principles">02 / PRINCIPLES</div><h2 data-i18n-html="aboutTitle">NO MAGIC.<br><span>JUST</span> GOOD<br>WORK.</h2><div class="about-text"><p data-i18n="aboutText">I use AI as an accelerator, not as a substitute for thinking. I understand the problem, build a prototype, connect the real system, and verify the result.</p><ol><li><b>01</b><span data-i18n="step1">Find what the product actually needs</span></li><li><b>02</b><span data-i18n="step2">Build a working solution quickly</span></li><li><b>03</b><span data-i18n="step3">Test it in a real-world scenario</span></li></ol></div><div class="about-side">VIBE CODING / NO VIBE OUTPUT</div></section>
+    <section class="contact" id="contact"><p data-i18n="letsTalk">03 / LET'S TALK</p><h2 data-i18n-html="contactTitle">HAVE A<br>PROJECT?</h2><a href="mailto:swizex@my.com">SWIZEX@MY.COM <span>↗</span></a><small data-i18n="contactNote">Open to full-time roles, startup teams, and selected freelance projects.</small></section>
   </main>
-  <footer><b>EDUARD / 2026</b><span>DESIGN → CODE → RESULT</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <footer><b>EDUARD / 2026</b><span data-i18n="footerLine">DESIGN → CODE → RESULT</span><a href="#top" data-i18n="backTop">BACK TO TOP ↑</a></footer>
   <script src="./script.js"></script>
 </body>
 </html>
