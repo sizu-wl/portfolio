@@ -27,7 +27,10 @@ img{display:block;max-width:100%}
 .hero-card b{position:absolute;right:-8px;bottom:-42px;background:var(--paper);color:var(--black);font-size:11px;padding:9px 12px}
 .hero-note{position:absolute;left:3vw;bottom:62px;width:min(35vw,470px);font-size:clamp(14px,1.25vw,19px);line-height:1.38;z-index:5;margin:0;background:rgba(17,17,17,.9);padding:10px 12px 10px 0}
 .scroll-cue{position:absolute;right:3vw;bottom:66px;border-bottom:2px solid var(--paper);padding:0 0 8px;width:210px;display:flex;justify-content:space-between;font-size:11px;font-weight:800;z-index:5}
-.hero-line{position:absolute;bottom:0;left:0;right:0;background:var(--acid);color:var(--black);height:42px;display:flex;align-items:center;white-space:nowrap;font-family:'Russo One';font-size:19px;word-spacing:16px}
+.hero-line{position:absolute;bottom:0;left:0;right:0;background:var(--acid);color:var(--black);height:42px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;font-family:'Russo One';font-size:19px;word-spacing:16px}
+.hero-line-track{display:flex;width:max-content;will-change:transform;animation:hero-marquee 18s linear infinite}
+.hero-line-track span{display:block;flex:none;padding-right:16px}
+@keyframes hero-marquee{to{transform:translateX(-50%)}}
 .work{padding:0 3vw 12vw}
 .section-title{display:grid;grid-template-columns:80px 1fr minmax(240px,480px);gap:3vw;align-items:end;padding:11vw 0 6vw}
 .section-title>span{font-family:'Russo One';font-size:50px;color:var(--acid)}
@@ -117,6 +120,7 @@ footer span{display:none}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+.hero-line-track{animation:none}
 .reveal{opacity:1;transform:none;transition:none}
 .case-media img{transition:none}
 }
