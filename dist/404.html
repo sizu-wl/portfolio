@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#050505">
+  <title>404 — Signal lost / SWIZEX</title>
+  <link rel="icon" type="image/jpeg" href="./assets/swizex-wordmark.jpg">
+  <link rel="stylesheet" href="./styles.css?v=5">
+</head>
+<body class="error-page">
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar error-topbar">
+    <a class="brand" href="/" aria-label="SWIZEX — home"><img src="./assets/swizex-wordmark.jpg" alt="SWIZEX"></a>
+    <p>ERROR / LOST SIGNAL</p>
+    <nav><a href="/" data-copy="home">HOME</a><button class="error-lang" type="button">RU</button></nav>
+  </header>
+  <main class="error-main">
+    <video autoplay muted loop playsinline poster="./assets/swizex-wordmark.jpg" aria-hidden="true">
+      <source src="./assets/swizex-motion-02.mp4" type="video/mp4">
+    </video>
+    <div class="error-grid" aria-hidden="true"></div>
+    <div class="error-code"><span>4</span><i>0</i><span>4</span></div>
+    <div class="error-copy">
+      <span>HTTP / 404</span>
+      <h1 data-copy="title">SIGNAL<br><i>LOST.</i></h1>
+      <p data-copy="text">This address does not exist or has moved. Return to the system and continue from there.</p>
+      <a href="/"><span data-copy="action">RETURN TO HOME</span><b>↗</b></a>
+    </div>
+    <div class="error-meta"><span>SWIZEX / SYSTEM MESSAGE</span><span>REQUEST FAILED</span><span>RECOVERY AVAILABLE</span></div>
+  </main>
+  <script>
+    const copy={en:{home:'HOME',title:'SIGNAL<br><i>LOST.</i>',text:'This address does not exist or has moved. Return to the system and continue from there.',action:'RETURN TO HOME'},ru:{home:'ГЛАВНАЯ',title:'СИГНАЛ<br><i>ПОТЕРЯН.</i>',text:'Такого адреса нет или страница была перемещена. Вернитесь в систему и продолжите оттуда.',action:'ВЕРНУТЬСЯ НА ГЛАВНУЮ'}};
+    const button=document.querySelector('.error-lang');
+    function setErrorLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-copy]').forEach(node=>node.innerHTML=copy[lang][node.dataset.copy]);button.textContent=lang==='en'?'RU':'EN';localStorage.setItem('swizex-language',lang)}
+    button.addEventListener('click',()=>setErrorLanguage(document.documentElement.lang==='en'?'ru':'en'));
+    setErrorLanguage(localStorage.getItem('swizex-language')||'en');
+  </script>
+</body>
+</html>
