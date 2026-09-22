@@ -30,12 +30,13 @@ button{font:inherit}
 .hero-link b{font-size:18px;font-weight:300}
 .hero-meta{grid-column:1/3;margin-top:clamp(36px,5vh,72px);display:grid;grid-template-columns:1fr 1fr 1fr;font-size:8px;line-height:1.65;letter-spacing:.2em;color:var(--muted)}
 .hero-meta span:nth-child(2){text-align:center}.hero-meta span:last-child{text-align:right}
-.work{padding:0 var(--pad) clamp(100px,12vw,210px)}
+.work{position:relative;padding:0 var(--pad) clamp(100px,12vw,210px);background-color:var(--ink);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:100% 12.5%,25% 100%;background-position:0 0}
+.work:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0,transparent 16%,transparent 84%,var(--ink) 100%);pointer-events:none}.work>*{position:relative;z-index:1}
 .section-head{padding:clamp(110px,12vw,190px) 0 clamp(70px,8vw,130px);display:grid;grid-template-columns:100px minmax(0,1fr) minmax(260px,420px);gap:3vw;align-items:end;border-bottom:1px solid var(--line)}
 .section-head>*{min-width:0}
 .section-index,.section-head>div>p,.about-title>span,.film-copy>span,.contact-top{font-size:9px;font-weight:700;letter-spacing:.24em;color:var(--muted)}
 .section-head>div>p{margin:0 0 24px}.section-head h2,.brand-film h2,.about h2,.contact h2{margin:0;font-weight:260;letter-spacing:-.065em;line-height:.84}
-.section-head h2{font-size:clamp(58px,8vw,128px)}
+.section-head h2{font-size:clamp(58px,8vw,128px)}.section-head h2 span{color:transparent;-webkit-text-stroke:1px rgba(241,241,239,.72)}
 .section-intro{margin:0;padding-left:24px;border-left:1px solid var(--line);font-size:clamp(14px,1.2vw,18px);line-height:1.6;color:var(--silver)}
 .case{padding-top:clamp(70px,8vw,130px);display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.55fr);grid-template-areas:"media copy" "bar copy";gap:0 clamp(30px,5vw,90px);align-items:end}
 .case-reverse{grid-template-columns:minmax(260px,.55fr) minmax(0,1.6fr);grid-template-areas:"copy media" "copy bar"}
