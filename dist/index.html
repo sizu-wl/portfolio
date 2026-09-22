@@ -3,33 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Eduard's portfolio — web development, interface design, and working product systems.">
-  <title>Eduard — Design, Code, Ship</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Cpath d='M8 8h48v13H24v7h27v11H24v8h32v9H8z' fill='%23ddff00'/%3E%3C/svg%3E">
+  <meta name="description" content="SWIZEX — digital product design and development. Ideas into systems.">
+  <meta name="theme-color" content="#050505">
+  <title>SWIZEX — Ideas into systems</title>
+  <link rel="icon" type="image/jpeg" href="./assets/swizex-wordmark.jpg">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <header class="topbar"><a class="brand" href="#top">EDUARD®</a><p>WEB / PRODUCT / SYSTEMS</p><nav aria-label="Main navigation"><a href="#work" data-i18n="navWork">PROJECTS</a><a href="#about" data-i18n="navAbout">ABOUT</a><a href="#contact" data-i18n="navContact">CONTACT</a><button class="lang-toggle" type="button" aria-label="Switch language">RU</button></nav></header>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="SWIZEX — home"><img src="./assets/swizex-wordmark.jpg" alt="SWIZEX"></a>
+    <p>DESIGN × CODE × IMPACT</p>
+    <nav aria-label="Main navigation">
+      <a href="#work" data-i18n="navWork">WORK</a>
+      <a href="#about" data-i18n="navAbout">SYSTEM</a>
+      <a href="#contact" data-i18n="navContact">CONTACT</a>
+      <button class="lang-toggle" type="button" aria-label="Switch language">RU</button>
+    </nav>
+  </header>
+
   <main id="top">
     <section class="hero">
-      <div class="hero-index" data-i18n-html="heroIndex">PORTFOLIO<br>2026 / 01</div><div class="hero-stamp" data-i18n-html="heroStamp">BASED IN ASIA<br>OPEN TO RELOCATION</div>
-      <h1 data-i18n-html="heroTitle"><span>DESIGN.</span><br>CODE.<br><i>SHIP.</i></h1>
-      <div class="hero-card"><img src="./assets/live-lab.png" alt="Live production studio project" width="1536" height="1024"><b data-i18n="selectedCount">SELECTED WORK / 03</b></div>
-      <p class="hero-note" data-i18n="heroNote">I design and build digital products — from the first screen to a working integration on a real device.</p>
-      <a class="scroll-cue" href="#work"><span data-i18n="scrollWork">SCROLL TO WORK</span> <span>↓</span></a>
-      <div class="hero-line" aria-hidden="true"><div class="hero-line-track"><span>DEVELOPER × DESIGNER × BUILDER × DEVELOPER × DESIGNER × BUILDER ×</span><span>DEVELOPER × DESIGNER × BUILDER × DEVELOPER × DESIGNER × BUILDER ×</span></div></div>
+      <video class="hero-video" autoplay muted loop playsinline poster="./assets/swizex-wordmark.jpg" aria-hidden="true">
+        <source src="./assets/swizex-motion.mp4" type="video/mp4">
+      </video>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-status"><i></i><span data-i18n="heroStatus">AVAILABLE FOR SELECTED WORK</span></div>
+      <p class="hero-eyebrow" data-i18n="heroEyebrow">DIGITAL PRODUCT DESIGNER × DEVELOPER</p>
+      <h1 data-i18n-html="heroTitle">IDEAS INTO<br><span>SYSTEMS.</span></h1>
+      <p class="hero-note" data-i18n="heroNote">I turn product ideas into clear interfaces, working code, and real-world impact.</p>
+      <a class="hero-link" href="#work"><span data-i18n="viewWork">VIEW SELECTED WORK</span><b>↘</b></a>
+      <div class="hero-meta"><span>SWIZEX / 2026</span><span>36.6512° N<br>117.1201° E</span><span>IDEAS → PRODUCTS<br>→ REAL IMPACT</span></div>
     </section>
+
     <section class="work" id="work">
-      <header class="section-title"><span>01</span><h2 data-i18n-html="workTitle">SELECTED<br>WORK</h2><p data-i18n="workIntro">Three projects where design does not stop at a mockup — it ends in a working system.</p></header>
-      <article class="case case-jarvis"><div class="case-no">01 / 03</div><div class="case-media"><img src="./assets/jarvis.png" alt="Voice assistant and smart home scene" width="1536" height="1024"></div><div class="case-title"><small data-i18n="jarvisType">VOICE SYSTEM / SMART HOME</small><h3>JARVIS</h3></div><div class="case-info"><p data-i18n="jarvisText">A Russian-language smart home assistant with streaming speech recognition, a remote processing layer, and verified device-state feedback.</p><div class="tags"><span>PYTHON</span><span>WEBSOCKET</span><span>HOME ASSISTANT</span></div></div><div class="case-mark">J</div></article>
-      <article class="case case-live"><div class="case-no">02 / 03</div><div class="case-media"><img src="./assets/live-lab.png" alt="Live production equipment and interface collage" width="1536" height="1024"></div><div class="case-title"><small data-i18n="liveType">CREATOR TOOL / STREAMING</small><h3>LIVE<br>LAB</h3></div><div class="case-info"><p data-i18n="liveText">An integrated setup for OBS, TikTok LIVE Studio, iPhone mirroring, and the music-driven LiveDeck. Tested load optimization, track requests, and a production-ready streaming workflow.</p><div class="tags"><span>OBS</span><span>WEB UI</span><span>AUTOMATION</span></div></div><div class="metric"><b>60→30</b><span>FPS / MEASURED</span></div></article>
-      <article class="case case-lampa"><div class="case-no">03 / 03</div><div class="case-media"><img src="./assets/lampa.png" alt="Television interface and remote control" width="1536" height="1024"></div><div class="case-title"><small data-i18n="lampaType">TV UX / MEDIA SYSTEM</small><h3>LAMPA<br>NAVIGATOR</h3></div><div class="case-info"><p data-i18n="lampaText">Season and episode navigation for Apple TV, including title parsing, result sorting, and a remote-friendly interface built for the living room.</p><div class="tags"><span>JAVASCRIPT</span><span>APPLE TV UX</span><span>TORRSERVER</span></div></div><div class="case-mark">▶</div></article>
+      <header class="section-head reveal">
+        <span class="section-index">01 / 03</span>
+        <div><p data-i18n="selectedWork">SELECTED WORK</p><h2 data-i18n-html="workTitle">PRODUCTS WITH<br>REAL OUTPUT.</h2></div>
+        <p class="section-intro" data-i18n="workIntro">Three systems designed beyond the mockup — built, connected, and tested in use.</p>
+      </header>
+
+      <article class="case reveal">
+        <div class="case-media"><img src="./assets/jarvis.png" alt="Jarvis voice assistant and smart home" width="1536" height="1024"></div>
+        <div class="case-bar"><span>01</span><span data-i18n="jarvisType">VOICE SYSTEM / SMART HOME</span><span>PYTHON / WS / HA</span></div>
+        <div class="case-copy"><h3>JARVIS</h3><p data-i18n="jarvisText">A Russian-language smart home assistant with streaming speech recognition, remote processing, and verified device-state feedback.</p></div>
+      </article>
+
+      <article class="case case-reverse reveal">
+        <div class="case-media"><img src="./assets/live-lab.png" alt="Live production equipment and interface" width="1536" height="1024"></div>
+        <div class="case-bar"><span>02</span><span data-i18n="liveType">CREATOR TOOL / STREAMING</span><span>OBS / WEB UI / AUTOMATION</span></div>
+        <div class="case-copy"><h3>LIVE LAB</h3><p data-i18n="liveText">An integrated live-production system for OBS, TikTok LIVE Studio, iPhone mirroring, and music-driven automation.</p></div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-media"><img src="./assets/lampa.png" alt="Television media navigation interface" width="1536" height="1024"></div>
+        <div class="case-bar"><span>03</span><span data-i18n="lampaType">TV UX / MEDIA SYSTEM</span><span>JS / APPLE TV / TORRSERVER</span></div>
+        <div class="case-copy"><h3>LAMPA</h3><p data-i18n="lampaText">Season and episode navigation for Apple TV with title parsing, result sorting, and a remote-first living-room interface.</p></div>
+      </article>
     </section>
-    <section class="about" id="about"><div class="about-kicker" data-i18n="principles">02 / PRINCIPLES</div><h2 data-i18n-html="aboutTitle">NO MAGIC.<br><span>JUST</span> GOOD<br>WORK.</h2><div class="about-text"><p data-i18n="aboutText">I use AI as an accelerator, not as a substitute for thinking. I understand the problem, build a prototype, connect the real system, and verify the result.</p><ol><li><b>01</b><span data-i18n="step1">Find what the product actually needs</span></li><li><b>02</b><span data-i18n="step2">Build a working solution quickly</span></li><li><b>03</b><span data-i18n="step3">Test it in a real-world scenario</span></li></ol></div><div class="about-side">VIBE CODING / NO VIBE OUTPUT</div></section>
-    <section class="contact" id="contact"><p data-i18n="letsTalk">03 / LET'S TALK</p><h2 data-i18n-html="contactTitle">HAVE A<br>PROJECT?</h2><a href="mailto:swizex@my.com">SWIZEX@MY.COM <span>↗</span></a><small data-i18n="contactNote">Open to full-time roles, startup teams, and selected freelance projects.</small></section>
+
+    <section class="brand-film reveal" id="motion" aria-label="SWIZEX brand motion">
+      <div class="film-grid" aria-hidden="true"></div>
+      <div class="film-copy"><span>02 / MOTION IDENTITY</span><h2 data-i18n-html="filmTitle">FROM SIGNAL<br>TO OUTPUT.</h2></div>
+      <video autoplay muted loop playsinline poster="./assets/swizex-wordmark.jpg">
+        <source src="./assets/swizex-motion-02.mp4" type="video/mp4">
+      </video>
+      <div class="film-meta"><span>INPUT / IDEA</span><span>PROCESS / SYSTEM</span><span>OUTPUT / IMPACT</span></div>
+    </section>
+
+    <section class="about" id="about">
+      <header class="about-title reveal"><span data-i18n="principles">OPERATING SYSTEM</span><h2 data-i18n-html="aboutTitle">LESS NOISE.<br>MORE IMPACT.</h2></header>
+      <div class="about-copy reveal">
+        <p data-i18n="aboutText">AI accelerates the work; it does not replace judgment. I understand the problem, build the interface, connect the real system, and verify the result.</p>
+      </div>
+      <ol class="principles">
+        <li class="reveal"><span>01</span><b data-i18n="step1Title">UNDERSTAND</b><p data-i18n="step1">Find the real constraint before touching the interface.</p></li>
+        <li class="reveal"><span>02</span><b data-i18n="step2Title">BUILD</b><p data-i18n="step2">Turn the idea into a working product, not a static promise.</p></li>
+        <li class="reveal"><span>03</span><b data-i18n="step3Title">VERIFY</b><p data-i18n="step3">Test the result on real devices and real workflows.</p></li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-top"><span data-i18n="contactLabel">03 / START A CONVERSATION</span><span>AVAILABLE / 2026</span></div>
+      <h2 data-i18n-html="contactTitle">MAKE IT<br><i>REAL.</i></h2>
+      <a href="mailto:swizex@my.com"><span>SWIZEX@MY.COM</span><b>↗</b></a>
+      <p data-i18n="contactNote">Open to full-time roles, startup teams, and selected product work.</p>
+    </section>
   </main>
-  <footer><b>EDUARD / 2026</b><span data-i18n="footerLine">DESIGN → CODE → RESULT</span><a href="#top" data-i18n="backTop">BACK TO TOP ↑</a></footer>
+
+  <footer><img src="./assets/swizex-wordmark.jpg" alt="SWIZEX"><span>IDEAS → PRODUCTS → REAL IMPACT</span><a href="#top" data-i18n="backTop">BACK TO TOP ↑</a></footer>
   <script src="./script.js"></script>
 </body>
 </html>
